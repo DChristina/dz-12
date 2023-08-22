@@ -6,7 +6,7 @@ public class Main {
         Man person3 = new Man("Nikki","lius",66);
         Woman person4  = new Woman("Jane","Loverson",61);
 
-        System.out.println( "Last name before get marriage: " + person2.getLastName());
+        /*System.out.println( "Last name before get marriage: " + person2.getLastName());
 
         person2.registerPartnership(person1);
 
@@ -19,7 +19,10 @@ public class Main {
         System.out.println(person1.getFirstName() + "is retired: "+ person1.isRetired());
         System.out.println(person2.getFirstName() + "is retired: "+ person2.isRetired());
         System.out.println(person3.getFirstName() + "is retired: "+ person3.isRetired());
-        System.out.println(person4.getFirstName() + "is retired: "+ person4.isRetired());
+        System.out.println(person4.getFirstName() + "is retired: "+ person4.isRetired());*/
 
+        person1.registerPartnership(person2);
+        person1.deregisterPartnership(true);
+        System.out.println( person1.getPartner());
     }
 }
